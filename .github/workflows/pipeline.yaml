@@ -25,3 +25,10 @@ jobs:
 
             - name: build npm 
               run: npm run build
+
+            - name: Install playwright
+            #   run: npm init playwright@latest
+              run: npx playwright install
+            
+            - name: Run E2E Tests
+              run: npm run test:e2e
