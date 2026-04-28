@@ -9,9 +9,6 @@ jobs:
     simple_deployment_pipeline:
         runs-on: ubuntu-24.04
         steps:
-            - name: Where am I
-              run: pwd
-
             - uses: actions/checkout@v6
             - uses: actions/setup-node@v6
               with:
@@ -22,3 +19,9 @@ jobs:
             
             - name: Check style 
               run: npx eslint 
+            
+            - name: Run npm test
+              run: npm run test
+
+            - name: build npm 
+              run: npm build
