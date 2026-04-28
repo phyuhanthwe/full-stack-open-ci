@@ -1,4 +1,4 @@
-/* global require, global */
+/* global require */
 
 const { test, describe, expect } = require('@playwright/test')
 

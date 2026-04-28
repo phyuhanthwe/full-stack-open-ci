@@ -1,4 +1,4 @@
-/* global require, global */
+/* global require, module, process */
 
 const { defineConfig } = require('@playwright/test')
 
