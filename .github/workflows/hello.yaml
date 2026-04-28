@@ -12,4 +12,12 @@ jobs:
             - name: Say hello
               run:
                 echo "Hello World!"
+
+            - name: print current date
+              run:
+                date
+      
+            - name: print ls - l
+              run:
+                ls -l
   
